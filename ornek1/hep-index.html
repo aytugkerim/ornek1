@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HEP - Film, Animasyon Yapım Şirketimizle Hep Sizlerleyiz:)</title>
+
+	<link rel="stylesheet" type="text/css" href="libs/bxslider/jquery.bxslider.css">
+	
+	<script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
+	
+	<script type="text/javascript" src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="libs/bxslider/jquery.fitvids.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.css">
+
+	 <script>
+	    $(document).ready(function(){
+	    	var kaydiriciAyarlari = {
+	    		captions: true,
+	    		video: true
+	    		//auto: true,
+	    		//slideWidth: 900
+	    	};
+	      var slider = $('#slider-outer ul').bxSlider(kaydiriciAyarlari);
+
+	      var karuselAyarlari = {
+	      	slideWidth: 200, 
+	      	maxSlides: 4,  
+	      	slideMargin: 10
+	      };
+
+	      $('#karusel-outer ul').bxSlider(karuselAyarlari);
+	      $(window).on("scroll", function(){
+	      	if ($(window).scrollTop() > 100){
+	      		$("#basa-don").fadeIn(500);      	
+	     	}
+	     	else{
+	     		$("#basa-don").fadeOut(500);
+	     	}
+	      }); 
+
+	       $("#basa-don").on("click" , function(){
+		      	$("html,body").animate({
+		      		scrollTop:0
+		      	});
+	      });
+	    });
+  </script>
+
+</head>
+<body>
+	<div id="site-header">
+		<div class="site-logo">
+			<a href="/" title="Ana Sayfa" id="logo">
+              <img src="images/logo.png" alt="Ana Sayfa">
+            </a>
+		</div>
+		<div id="site-nav">
+			<ul class="navbar">
+				<li class="nav-item">
+					<a href="bizkimiz.html" class="nav-link">Karakterler</a>		
+				</li>
+				<li class="nav-item">
+					<a href="bizkimiz.html" class="nav-link">Filmler</a>		
+				</li>
+				<li class="nav-item">
+					<a href="bizkimiz.html" class="nav-link">Animasyonlar</a>		
+				</li>
+				<li class="nav-item">
+					<a href="bizkimiz.html" class="nav-link">TV</a>		
+				</li>
+				<li class="nav-item">
+					<a href="bizkimiz.html" class="nav-link">Videolar</a>		
+				</li>
+				<li class="nav-item">
+					<a href="bizkimiz.html" class="nav-link">Haberler</a>		
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="slider-outer">
+		<ul>
+			<li>
+				<video controls poster="images/star-wars.jpg"> 
+			        <source src="images/StarWarsTrailer.mp4" type="video/mp4"> 
+		    	</video> 				
+			</li>
+			<li>
+				<img src="images/space.png">
+			</li>
+			<li>
+				<img src="images/114100741_m.jpg" style="object-position: 0 -600px;">
+			</li>
+		</ul>		
+	</div>
+	<h2>Öne Çıkanlar</h2>
+	<div id="prime-panel">
+		<video controls poster="images/maxresdefault.jpg"> 
+	        <source src="images/Think Like a Coder _ Teaser Trailer.mp4" type="video/mp4"> 
+    	</video> 			
+		<div class="prime-rows">
+			<div>
+				<img src="images/aeg_card_15.jpg">	
+			</div>
+			<div class="last">
+				<img src="images/black-widow.jpg">
+			</div>
+		</div>
+	</div>
+	<h2>En Çok Satan Dijital Çizgi Romanlar</h2>
+	<div id="karusel-outer">
+		<ul>
+			<li>
+				<a href="hep-index.html"><img src="images/comics/ironman.png"></a>
+			</li>
+			<li>
+				<a href="hep-index.html"><img src="images/comics/spiderman.png"></a>
+			</li>
+			<li>
+				<a href="hep-index.html"><img src="images/comics/silver.png"></a>
+			</li>
+			<li>
+				<a href="hep-index.html"><img src="images/comics/wolverine.png"></a>
+			</li>
+			<li>
+				<a href="hep-index.html"><img src="images/comics/captanamerica.png"></a>
+			</li>
+			<li>
+				<a href="hep-index.html"><img src="images/comics/hulk.png"></a>
+			</li>
+		</ul>		
+	</div>
+	<div id="footer">		
+		<div class="privacy">
+			<h3 style="white-space: pre-wrap; display: flex; justify-content: center;">
+				<a href="/privacy-policy">PRIVACY POLICY </a> | <a href="/terms-of-use">TERMS OF USE</a>
+			</h3>
+			<h3 style="text-align: center; white-space: pre-wrap;">© 2019 - www / hep</h3>
+
+		</div>
+	</div>
+	<span id="basa-don">
+		<i class="fas fa-arrow-alt-circle-up"></i>
+	</span>
+</body>
+</html>

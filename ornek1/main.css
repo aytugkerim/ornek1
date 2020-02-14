@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url(fonts/Roboto-Bold-webfont.woff) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: robotobold;
+
+}
+
+/*  */
+#site-header {
+    margin: auto;
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.site-logo a {
+	display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#site-nav {
+	min-height: 114px;
+
+    display: flex;
+    margin: 0 auto;
+
+    align-items: center;
+}
+
+ul.navbar{
+    display: flex;
+
+    list-style-type: none;
+    list-style: none;
+
+    padding: 0;
+}
+
+li.nav-item{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    color: #252526;
+
+    line-height: 1.5;
+    transition: color .2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #83cf00;
+}
+
+/* kaydirici ayarlari */
+#slider-outer div.bx-wrapper {
+    border-top: 2px solid #83cf00 !important;
+    width: 100%;
+}
+
+#slider-outer div.bx-wrapper, #slider-outer div.bx-viewport {
+    height: 400px !important;
+}
+
+/*Resimlerin slaytların içini tamamen doldurması için*/
+#slider-outer div.bx-wrapper img{ 
+    width:100%; 
+}
+
+#slider-outer div.bx-wrapper video{ 
+    width: 100%; 
+    height: 400px;
+}
+
+/* karusel ayarlari */ 
+#karusel-outer {
+    display: flex;
+    justify-content: center;
+}
+
+/* one cikanlar panelinin ayarlari */
+
+#prime-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 30px;
+
+    height: 360px;
+}
+
+#prime-panel video {
+    height: 100%;
+    margin-right: 30px;
+}
+
+#prime-panel img{
+    height: 160px;
+}
+
+.prime-rows {
+    height: 100%;
+    position: relative;
+}
+
+.prime-rows div.last {
+    position: absolute;
+    bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #f80a2a;
+}
+
+#footer {
+    margin-top: 60px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: #303030;
+    background-image: url(images/footer-v3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-top: 2px solid #83cf00 !important;
+}
+
+#footer a, h3 {
+    color: white;
+}
+
+#basa-don {
+    font-size: 3em; 
+    color: #303030; 
+
+    position: fixed; 
+    bottom: 10px; 
+    right: 20px;
+
+    display: none;
+    cursor: pointer;
+}
+
+
